@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: FoodApp
+
+
+## MYSQL CONNECTION
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fooddb
+    username: postgres
+    password: aros197206
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
