@@ -5,9 +5,9 @@ spring:
 
 ## MYSQL CONNECTION
   datasource:
-    url: jdbc:postgresql://localhost:5432/fooddb
-    username: postgres
-    password: aros197206
+    url: jdbc:postgresql://localhost:5432/
+    username:
+    password:
     driverClassName: org.postgresql.Driver
 
   jpa:
