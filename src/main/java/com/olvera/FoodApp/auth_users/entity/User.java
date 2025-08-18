@@ -1,6 +1,10 @@
 package com.olvera.FoodApp.auth_users.entity;
 
 import com.olvera.FoodApp.cart.entity.Cart;
+import com.olvera.FoodApp.order.entity.Order;
+import com.olvera.FoodApp.payment.entity.Payment;
+import com.olvera.FoodApp.review.entity.Review;
+import com.olvera.FoodApp.role.entity.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
