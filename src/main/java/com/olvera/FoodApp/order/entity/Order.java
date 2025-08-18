@@ -4,6 +4,7 @@ package com.olvera.FoodApp.order.entity;
 import com.olvera.FoodApp.auth_users.entity.User;
 import com.olvera.FoodApp.enums.OrderStatus;
 import com.olvera.FoodApp.enums.PaymentStatus;
+import com.olvera.FoodApp.payment.entity.Payment;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,8 @@
 package com.olvera.FoodApp.menu.entity;
 
 import com.olvera.FoodApp.category.entity.Category;
+import com.olvera.FoodApp.order.entity.OrderItem;
+import com.olvera.FoodApp.review.entity.Review;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -35,7 +37,7 @@ public class Menu {
     private Category category;
 
     @OneToMany(mappedBy = "menu", cascade = CascadeType.ALL)
-    private List<OrderItems> orderItems;
+    private List<OrderItem> orderItems;
 
     @OneToMany(mappedBy = "menu", cascade = CascadeType.ALL)
     private List<Review> reviews;

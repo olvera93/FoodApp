@@ -2,6 +2,7 @@ package com.olvera.FoodApp.order.dtos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.olvera.FoodApp.menu.dtos.MenuDTO;
 import lombok.Data;
 
 import java.math.BigDecimal;
