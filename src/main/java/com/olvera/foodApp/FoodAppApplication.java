@@ -12,6 +12,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableAsync
+@RequiredArgsConstructor
 public class FoodAppApplication {
 
 	public static void main(String[] args) {

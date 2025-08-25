@@ -38,6 +38,14 @@ spring:
             enable: true
             required: true
 
+## AWS Configuration
+##aws:
+##  s3:
+##    region:
+##    bicket:
+##  accessKeyId:
+##  secretKey:
+
 
 jwt:
   secret-key: ${JWT_SECRET_KEY:jwtkey}
