@@ -1,10 +1,11 @@
-package com.olvera.foodApp.auth_users.services;
+package com.olvera.foodApp.auth_users.services.impl;
 
 import com.olvera.foodApp.auth_users.dtos.LoginRequest;
 import com.olvera.foodApp.auth_users.dtos.LoginResponse;
 import com.olvera.foodApp.auth_users.dtos.RegistrationRequest;
 import com.olvera.foodApp.auth_users.entity.User;
 import com.olvera.foodApp.auth_users.repository.UserRepository;
+import com.olvera.foodApp.auth_users.services.AuthService;
 import com.olvera.foodApp.exceptions.BadRequestException;
 import com.olvera.foodApp.exceptions.NotFoundException;
 import com.olvera.foodApp.response.Response;
