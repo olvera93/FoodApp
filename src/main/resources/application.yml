@@ -1,3 +1,10 @@
+server:
+  error:
+    include-binging-errors: always
+    include-message: always
+    include-stacktrace: on_param
+  port: ${SERVER_PORT:8080}
+
 spring:
   application:
     name: FoodApp
@@ -5,9 +12,9 @@ spring:
 
 ## MYSQL CONNECTION
   datasource:
-    url: jdbc:postgresql://localhost:5432/
-    username:
-    password:
+    username: ${DATASOURCE_USERNAME:sa}
+    password: ${DATASOURCE_PASSWORD:password}
+    url: ${DATASOURCE_URL:jdbc:h2:mem:testdb}
     driverClassName: org.postgresql.Driver
 
   jpa:
@@ -17,5 +24,28 @@ spring:
     hibernate:
       ddl-auto: update
 
+  ## Mail configuration
+  mail:
+    host: ${MAIL_HOST:smtp.example.com}
+    port: ${MAIL_PORT:111}
+    username: ${MAIL_USERNAME:smtp.example.com}
+    password: ${MAIL_PASSWORD:smtp.example.com}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
 
-secreteJwtString: food123456789app123456789food123456789app123456789
+## AWS Configuration
+aws:
+  s3:
+    region: ${AWS_REGION:example-2}
+    bucket: ${AWS_BUCKET:example-dev}
+  accessKeyId: ${AWS_ACCESS_KEY:323ju}
+  secretKey: ${AWS_SECRET_KEY:1234d}
+
+
+jwt:
+  secret-key: ${JWT_SECRET_KEY:jwtkey}

@@ -39,7 +39,11 @@ public class SecurityFilter {
                                 "/api/auth/**",
                                 "/api/categories/**",
                                 "/api/menu/**",
-                                "/api/reviews/**").permitAll().anyRequest().authenticated())
+                                "/api/reviews/**",
+                                "/swagger-ui.html",
+                                "/swagger-ui/**",
+                                "/swagger-resources/**",
+                                "/v3/api-docs/**").permitAll().anyRequest().authenticated())
                 .sessionManagement(mag -> mag.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class);
         return httpSecurity.build();
