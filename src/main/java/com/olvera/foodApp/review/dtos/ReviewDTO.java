@@ -21,6 +21,8 @@ public class ReviewDTO {
 
     private Long orderId;
 
+    private String userName;
+
     @NotNull(message = "Rating is required")
     @Min(1)
     @Max(10)
